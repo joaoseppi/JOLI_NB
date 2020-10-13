@@ -21,7 +21,7 @@ public class Pessoa implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "codigo")
-    private int codigo;
+    private long codigo;
     
     @Column(name = "nome")
     private String nome;
@@ -36,7 +36,7 @@ public class Pessoa implements Serializable {
     private String telefone;
     
     @Column(name = "fk_cidade")
-    private int cod_cidade;
+    private long cod_cidade;
 
     public Pessoa() {
     }
@@ -45,11 +45,11 @@ public class Pessoa implements Serializable {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public int getCodigo() {
+    public long getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(long codigo) {
         this.codigo = codigo;
     }
 
@@ -85,11 +85,11 @@ public class Pessoa implements Serializable {
         this.telefone = telefone;
     }
 
-    public int getCod_cidade() {
+    public long getCod_cidade() {
         return cod_cidade;
     }
 
-    public void setCod_cidade(int cod_cidade) {
+    public void setCod_cidade(long cod_cidade) {
         this.cod_cidade = cod_cidade;
     }
 
