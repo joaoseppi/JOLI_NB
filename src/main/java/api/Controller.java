@@ -65,4 +65,9 @@ public class Controller {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
     
+    @RequestMapping(method = RequestMethod.POST)
+    public ResponseEntity<?> insert(@PathVariable("")){
+        
+    }
+    
 }
